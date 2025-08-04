@@ -1,5 +1,6 @@
-.ipynb_checkpoints
-.env
-__pycache__
-*.mp4
-venv
+    # .gitignore
+# Ignore Firebase service account keys
+*.json
+
+# OR specifically:
+vlm_alerts/fullsegura-55e8c-firebase-adminsdk-*.json

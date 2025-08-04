@@ -43,7 +43,9 @@ async def describe(prompt: str = Form(...), image: UploadFile = File(...)):
     end_time = time.time()
     processing_time = round(end_time - start_time, 2)
     description = output[0]["generated_text"][-1]["content"]
-    return {"description": description, "processing_time_seconds": processing_time}
-
+    return {
+        "Gemma3n processing time": processing_time,
+        "description": f"Gemma3n:E2B processing time: **{processing_time:.2f}s**\n💬 {description}"
+}
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)

@@ -19,3 +19,9 @@ Value Proposition
 
 Contact:
 info@fullsegura.com
+
+Code:
+start_gemma.sh launch gemmaKagle.py that is the model reasoning pipeline API.
+start_mining.sh open port 8000 to expose API client users. It deal with video frames too.
+mainKagle.py receives from Firebase the user prompt and take frames as input to send to the model. Receives model response and update Firebase as a real time mechanism to communicate publicly. This way the edge device can be behind NAT and be contacted from Internet in a sort of Pub/Sub model.
+vlmKagle.py 

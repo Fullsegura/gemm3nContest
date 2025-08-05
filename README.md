@@ -1,5 +1,5 @@
 
-### Please read comments in "WithComments" BRACH ##
+### Please read code comments in "WithComments" BRANCH ##
 
 This is the server backend component of "Guardians of Mother Earth" platform.
 It includes:
